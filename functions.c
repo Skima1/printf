@@ -45,37 +45,21 @@ int print_string(va_list types, char buffer[],
 	char *str = va_arg(types, char *);
 
 	UNUSED(buffer);
-
 	UNUSED(flags);
-
 	UNUSED(width);
-
 	UNUSED(precision);
-
 	UNUSED(size);
-
 	if (str == NULL)
-
 	{
-
 		str = "(null)";
-
 		if (precision >= 6)
-
 			str = "      ";
-
 	}
-
 	while (str[length] != '\0')
-
 		length++;
-
 	if (precision >= 0 && precision < length)
-
 		length = precision;
-
 	if (width > length)
-
 	{
 		if (flags & F_MINUS)
 		{
@@ -238,6 +222,7 @@ int print_binary(va_list types, char buffer[],
 		if (sum || i == 31)
 		{
 			char z = '0' + a[i];
+
 			write(1, &z, 1);
 			count++;
 		}
