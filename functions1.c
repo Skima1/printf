@@ -21,9 +21,6 @@ int print_unsigned(va_list types, char buffer[],
 
 	if (num == 0)
 		buffer[i--] = '0';
-	int i = BUFF_SIZE - 2;
-
-	unsigned long int num = va_arg(types, unsigned long int);
 
 	buffer[BUFF_SIZE - 1] = '\0';
 

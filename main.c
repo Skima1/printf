@@ -1,3 +1,5 @@
+#include <limits.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,7 +10,7 @@
 int main(void)
 {
 	int len;
-	int len;
+	int len2;
 	unsigned int ui;
 	void *addr;
 
