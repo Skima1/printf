@@ -8,7 +8,7 @@
 int main(void)
 {
 	int len;
-	int len;
+	
 	unsigned int ui;
 	void *addr;
 
